@@ -15,8 +15,8 @@ import java.util.List;
  * Created by artilla on 2016. 9. 27..
  */
 
-public class Square {
-    private final static String TAG = "Square";
+public class Cube {
+    private final static String TAG = "Cube";
 
     float[] vertices;
     private FloatBuffer vbuf;
@@ -35,7 +35,7 @@ public class Square {
     private String name;
     float color[];
 
-    public Square(String name, float[] color, float[] position) {
+    public Cube(String name, float[] color, float[] position) {
         this.name = name;
         this.color = color;
         this.position = position;

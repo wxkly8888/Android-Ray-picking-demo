@@ -14,15 +14,15 @@ public class MyRenderer implements Renderer {
 	private float[] mVMatrix = new float[16];
 	private float[] mProjMatrix = new float[16];
 
-	Square[] mSquare = new Square[4];
+	Cube[] mCube = new Cube[4];
 
 	@Override
 	public void onDrawFrame(GL10 unused) {
 
 		GLES20.glClear(GLES20.GL_COLOR_BUFFER_BIT | GLES20.GL_DEPTH_BUFFER_BIT );
 
-		for(int i = 0; i < mSquare.length; i++) {
-			mSquare[i].draw(mProjMatrix, mVMatrix);
+		for(int i = 0; i < mCube.length; i++) {
+			mCube[i].draw(mProjMatrix, mVMatrix);
 		}
 	}
 
@@ -41,15 +41,15 @@ public class MyRenderer implements Renderer {
 	public void onSurfaceCreated(GL10 unused, EGLConfig config) {
 		GLES20.glClearColor(0.0f,0.0f,0.0f,1.0f);
 
-		mSquare[0] = new Square("red", new float[] {1, 0, 0, 1}, new float[] {0, 0, 0.5f});
-		mSquare[1] = new Square("yellow", new float[] {1, 1, 0, 1}, new float[] {0.5f, 0.5f, 1f});
-		mSquare[2] = new Square("green", new float[] {0, 1, 0, 1},  new float[] {-1.2f, 0, 0});
-		mSquare[3] = new Square("blue", new float[] {0, 0, 1, 1}, new float[] {0.5f, -1f, 0});
+		mCube[0] = new Cube("red", new float[] {1, 0, 0, 1}, new float[] {0, 0, 0.5f});
+		mCube[1] = new Cube("yellow", new float[] {1, 1, 0, 1}, new float[] {0.5f, 0.5f, 1f});
+		mCube[2] = new Cube("green", new float[] {0, 1, 0, 1},  new float[] {-1.2f, 0, 0});
+		mCube[3] = new Cube("blue", new float[] {0, 0, 1, 1}, new float[] {0.5f, -1f, 0});
 	}
 
 	public void handleTouch(float rx, float ry) {
-		for(int i = 0; i < mSquare.length; i++) {
-			mSquare[i].rayPicking(viewWidth, viewHeight, rx, ry, mVMatrix, mProjMatrix);
+		for(int i = 0; i < mCube.length; i++) {
+			mCube[i].rayPicking(viewWidth, viewHeight, rx, ry, mVMatrix, mProjMatrix);
 		}
 	}
 }
