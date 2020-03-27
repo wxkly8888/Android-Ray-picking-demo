@@ -1,6 +1,4 @@
-package com.lhsg.raypickingdemo;
-
-import android.util.FloatMath;
+package com.wxkly.raypickingdemo;
 
 public class Vector3D {
 	

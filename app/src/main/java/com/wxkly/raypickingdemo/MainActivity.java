@@ -1,4 +1,4 @@
-package com.lhsg.raypickingdemo;
+package com.wxkly.raypickingdemo;
 
 import android.app.Activity;
 import android.app.ActivityManager;
@@ -69,9 +69,6 @@ public class MainActivity extends Activity {
         float rx = event.getX();
         float ry = event.getY();
         float rz = 0f;
-        // 테스트 편의상 화면의 중앙을 클릭한 것으로 간주한다
-        //rx = renderer.viewWidth/2;
-        //ry = renderer.viewHeight/2;
 
         renderer.handleTouch(rx, ry);
 

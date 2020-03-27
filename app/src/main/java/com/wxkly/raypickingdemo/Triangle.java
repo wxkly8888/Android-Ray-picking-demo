@@ -1,4 +1,4 @@
-package com.lhsg.raypickingdemo;
+package com.wxkly.raypickingdemo;
 
 import java.util.Arrays;
 

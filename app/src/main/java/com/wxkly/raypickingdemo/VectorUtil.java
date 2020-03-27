@@ -1,4 +1,4 @@
-package com.lhsg.raypickingdemo;
+package com.wxkly.raypickingdemo;
 
 public class VectorUtil {
     // dot product (3D) which allows vector operations in arguments

@@ -1,13 +1,8 @@
-package com.lhsg.raypickingdemo;
+package com.wxkly.raypickingdemo;
 
 import android.opengl.GLES20;
 import android.opengl.GLSurfaceView.Renderer;
 import android.opengl.Matrix;
-import android.util.Log;
-
-import java.nio.ByteBuffer;
-import java.nio.ByteOrder;
-import java.nio.FloatBuffer;
 
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
@@ -39,7 +34,7 @@ public class MyRenderer implements Renderer {
 		GLES20.glViewport(0,0,width,height);
 		float ratio = (float) width/height;
 		Matrix.frustumM(mProjMatrix, 0, -ratio, ratio, -1, 1, 3, 10);
-		Matrix.setLookAtM(mVMatrix,0, 0,0,5, 0f,0f,-1.0f, 0f,1.0f,0.0f);
+		Matrix.setLookAtM(mVMatrix,0, 2,2,9, 0f,0f,0f, 0f,1.0f,0.0f);
 	}
 
 	@Override
