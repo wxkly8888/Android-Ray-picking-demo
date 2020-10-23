@@ -4,5 +4,8 @@
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Android-Ray-picking-demo.app" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

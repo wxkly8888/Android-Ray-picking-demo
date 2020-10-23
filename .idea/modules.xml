@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AndroidRayPickingDemo-master.iml" filepath="$PROJECT_DIR$/AndroidRayPickingDemo-master.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Android-Ray-picking-demo.iml" filepath="$PROJECT_DIR$/.idea/modules/Android-Ray-picking-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Android-Ray-picking-demo.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Android-Ray-picking-demo.app.iml" />
     </modules>
   </component>
 </project>
